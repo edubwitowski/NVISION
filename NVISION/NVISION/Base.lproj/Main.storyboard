@@ -19,47 +19,72 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nVisionBoxLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="018-le-fYx">
-                                <rect key="frame" x="67" y="0.0" width="240" height="151"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QH9-pG-6rX" userLabel="middle Container">
+                                <rect key="frame" x="-3.5" y="105.5" width="382" height="456"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVISION1" translatesAutoresizingMaskIntoConstraints="NO" id="LSq-qg-31R">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="456"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="382" id="I1I-U3-gZR"/>
+                                            <constraint firstAttribute="height" constant="456" id="R0d-x4-qQk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="LSq-qg-31R" firstAttribute="top" secondItem="QH9-pG-6rX" secondAttribute="top" id="03X-gc-xDQ"/>
+                                    <constraint firstAttribute="height" constant="456" id="4w3-bC-Tv7"/>
+                                    <constraint firstItem="LSq-qg-31R" firstAttribute="leading" secondItem="QH9-pG-6rX" secondAttribute="leading" id="CcQ-c3-ffe"/>
+                                    <constraint firstAttribute="width" constant="382" id="pJN-Eh-NCi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D34-on-RkX" userLabel="topContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="0.94999999999999996"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NVISION2" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-lh-IhB">
-                                <rect key="frame" x="67" y="356" width="240" height="202"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxLogo1A" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="018-le-fYx">
+                                        <rect key="frame" x="111" y="4" width="152" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TkE-fT-6As" userLabel="bottomContainer">
+                                <rect key="frame" x="0.0" y="561.5" width="375" height="105.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bag-HN-wTd">
-                                <rect key="frame" x="67" y="584" width="240" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="MOTIVATE ME"/>
-                                <connections>
-                                    <action selector="motivateMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Qt-Zy-Mts"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NVISION1" translatesAutoresizingMaskIntoConstraints="NO" id="Tg3-MT-oVC">
-                                <rect key="frame" x="67" y="159" width="240" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bag-HN-wTd">
+                                        <rect key="frame" x="100" y="31" width="174" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="MOTIVATE ME"/>
+                                        <connections>
+                                            <action selector="motivateMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Qt-Zy-Mts"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QH9-pG-6rX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OcN-zc-sPO"/>
+                            <constraint firstItem="QH9-pG-6rX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vYC-jJ-0IO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="nVisionBoxImage1" destination="Tg3-MT-oVC" id="tve-uk-LZf"/>
-                        <outlet property="nVisionBoxImage2" destination="P5A-lh-IhB" id="Gh9-ch-nSR"/>
+                        <outlet property="nVisionBoxImage1" destination="LSq-qg-31R" id="et8-1S-Wvf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
+            <point key="canvasLocation" x="132" y="125.4872563718141"/>
         </scene>
     </scenes>
     <resources>
         <image name="NVISION1" width="150" height="150"/>
-        <image name="NVISION2" width="150" height="150"/>
+        <image name="boxLogo1A" width="155" height="138.5"/>
         <image name="boxbackground" width="333.5" height="311"/>
-        <image name="nVisionBoxLogo2" width="155" height="138.5"/>
     </resources>
 </document>
