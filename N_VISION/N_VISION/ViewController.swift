@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  NVISION
+//  N_VISION
 //
-//  Created by Eric Witowski on 10/7/19.
-//  Copyright © 2019 Eric Witowski. All rights reserved.
+//  Created by Eric Witowski on 10/14/19.
+//  Copyright © 2019 ERIC WITOWSKI. All rights reserved.
 //
 
 import UIKit
@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     var randomBoxIndex1 : Int = 0
-//    var randomBoxIndex2 : Int = 0
+    var randomBoxIndex2 : Int = 0
 
     let myName = "Eric"
     let dry = "Dont repeat yourself"
     
-    let boxArray = ["NVISION00", "NVISION01", "NVISION02", "NVISION03", "NVISION04", "NVISION05", "NVISION07", "NVISION08", "NVISION09", "NVISION10", "NVISION11", "NVISION12", "NVISION13", "NVISION14", "NVISION15", "NVISION16", "NVISION17", "NVISION18", "NVISION19", "NVISION20", "NVISION21", "NVISION22", "NVISION23", "NVISION24", "NVISION25", "NVISION26", "NVISION27"]
+    let boxArray = ["NVISION00", "NVISION01", "NVISION02", "NVISION03", "NVISION04", "NVISION05", "NVISION06", "NVISION07", "NVISION80", "NVISION90", "NVISION10", "NVISION11", "NVISION12", "NVISION13", "NVISION14", "NVISION15", "NVISION16", "NVISION17", "NVISION18", "NVISION19","NVISION20", "NVISION21", "NVISION22", "NVISION23", "NVISION24", "NVISION25", "NVISION26", "NVISION27"]
     
     @IBOutlet weak var nVisionBoxImage1: UIImageView!
-//    @IBOutlet weak var nVisionBoxImage2: UIImageView!
+    @IBOutlet weak var nVisionBoxImage2: UIImageView!
     
     
     
@@ -53,4 +53,3 @@ class ViewController: UIViewController {
         updateBoxImages()
     }
 }
-
