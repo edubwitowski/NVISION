@@ -15,8 +15,10 @@ class ViewController: UIViewController {
 
     let myName = "Eric"
     let dry = "Dont repeat yourself"
+    let version = "one.zero.five"
     
-    let boxArray = ["NVISION00", "NVISION01", "NVISION02", "NVISION03", "NVISION04", "NVISION05", "NVISION07", "NVISION08", "NVISION09", "NVISION10", "NVISION11", "NVISION12", "NVISION13", "NVISION14", "NVISION15", "NVISION16", "NVISION17", "NVISION18", "NVISION19", "NVISION20", "NVISION21", "NVISION22", "NVISION23", "NVISION24", "NVISION25", "NVISION26", "NVISION27"]
+    let boxArray = ["NVISION00", "NVISION01", "NVISION02", "NVISION03", "NVISION04", "NVISION05",
+        "NVISION06", "NVISION07", "NVISION08", "NVISION09", "NVISION10", "NVISION11", "NVISION12", "NVISION13", "NVISION14", "NVISION15", "NVISION16", "NVISION17", "NVISION18", "NVISION19", "NVISION20", "NVISION21", "NVISION22", "NVISION23", "NVISION24", "NVISION25", "NVISION26", "NVISION27", "NVISION28", "NVISION29"]
     
     @IBOutlet weak var nVisionBoxImage1: UIImageView!
     @IBOutlet weak var nVisionBoxImage2: UIImageView!
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
     
     
     func updateBoxImages(){
-        randomBoxIndex1 = Int(arc4random_uniform(20))
+        randomBoxIndex1 = Int(arc4random_uniform(28))
 //        randomBoxIndex2 = Int(arc4random_uniform(20))
         
         print(randomBoxIndex1)
